@@ -1,11 +1,10 @@
 {
   "name": "WebPack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack index.html",
-    "build": "webpack build index.html"
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +13,14 @@
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmldnjs212/WebPack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gmldnjs212/WebPack/issues"
+  },
+  "homepage": "https://github.com/gmldnjs212/WebPack#readme",
+  "description": ""
 }
