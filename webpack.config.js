@@ -19,13 +19,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/, 
-        // \.       = 마침표 그자체를 의미 
-        // /\.css$/ = .css로 끝나는 파일을 찾는 정규표현식
+        test: /\.s?css$/, 
+        // \.        = 마침표 그자체를 의미 
+        // /\.css$/  = .css로 끝나는 파일을 찾는 정규표현식
         // ~$        = ~으로 끝나는..
+        // s?        = s라는 단어가 있을수도 없을수도 있다
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader',
         ]
       }
     ]
